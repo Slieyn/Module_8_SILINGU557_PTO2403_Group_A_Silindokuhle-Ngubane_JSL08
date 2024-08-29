@@ -25,14 +25,18 @@
       }
       
       
+      
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
-      const branchA = new BankBranch ('Branch')
-      console.log (branchA.getBranchInfo ());
+      const branchA = new BankBranch ('Branch Information')
+      console.log (branchA.getBranchInfo());
 
-      console.log(branchA === branchB);
+      const branchB = new BankBranch ('Branch Information')
+      console.log (branchB.getBranchInfo());
+
+      console.log (branchA === branchB);
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
 // NOTES:
